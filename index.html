@@ -11,7 +11,8 @@
   <!-- Favicons -->
   <link href="assets/img/icon.png" rel="icon">
   <link href="assets/img/icon.png" rel="apple-touch-icon">
-
+  <meta name="theme-color" content="#ed901d" />
+  <link rel="manifest" href="manifest.json" />
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
     rel="stylesheet">
@@ -67,7 +68,7 @@
         <!-- <a href="index.html"></a> -->
         <ul>
           <li><a href="#"><i class="ri-phone-line"></i>+91 96-95-100143</a></li>
-          <li><a href="#"><i class="ri-mail-open-line"></i>sayhai@voltry.in</a></li>
+          <li><a href="#"><i class="ri-mail-open-line"></i>sayhi@voltry.in</a></li>
         </ul>
       </div>
       <div class="nav-submenu d-lg-block d-flex align-items-center justify-content-center align-self-center">
@@ -821,68 +822,5 @@
   <script src="https://momentjs.com/downloads/moment.min.js"></script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
-  <script>
-    $(function() {
-        $('.lazy').lazy();
-    });
-    $.ajax({
-          method: "POST",
-          url: "https://api.hashnode.com/",
-          beforeSend: function(){
-              $('#image').show();
-          },
-          contentType: "application/json",
-          headers: {
-            Authorization: "bearer 0865a5ed-578f-45e3-ae21-de8120800101"
-          },
-          complete: function(){
-            $('#image').hide();
-          },
-          data: JSON.stringify({
-            query: `query{
-              user(username:"rahuladream") {
-                publication{
-                  posts {
-                    title
-                    brief
-                    slug
-                    coverImage
-                    cuid
-                    totalReactions
-                    dateAdded
-                    popularity
-                  }
-                }
-              }
-            }`,
-          variables: {
-            "entry": $('#entry').val()
-          }
-        })
-      }).then(function(data) { 
-      var mainContainer = document.getElementById("blogData");
-      tmp = data['data']['user']['publication']['posts'];
-      var len = tmp.length / 2;
-                var txt = "";
-                if(len > 0){
-                    for(var i=0;i<len;i++){
-                            // var div = document.createElement("div");
-                            if (i+1 == len) { col_change = 'col-lg-6' } else { col_change = 'col-lg-3' }
-                            var dateString = moment(tmp[i].dateAdded).format("MM-DD-YYYY");
-                            var popularity = Math.ceil(tmp[i].popularity);
-                            innerHTML = "<div class='col-sm-12 "+ col_change +" col-12'> <div class='card' style='background-image: url("+ tmp[i].coverImage +");' data-aos='fade-up' data-aos-delay='100'>" +
-                            "<div class='card-body-second'><h6 class='card-text'>"+ dateString +"/ <i class='ri-eye-line'></i> "+ popularity +"  </h6><h5 class='card-title'><a href='https://blog.voltry.in/"+ tmp[i].slug +"' target='_blank'>"+ tmp[i].title +"</a></h5>" +
-                            "<div class='read-more'><a href='https://blog.voltry.in/"+ tmp[i].slug +"' target='_blank'> Read more</a></div></div></div></div>"
-                            $("#blogData").append(innerHTML);
-                            
-                    }
-                }
-
-    });
-      
-  </script>
-
 </body>
-
 </html>

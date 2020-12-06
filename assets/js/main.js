@@ -134,8 +134,6 @@
       }
     }
   });
-
-
   // Porfolio isotope and filter
   var portfolioIsotope = $('.portfolio-container').isotope({
     itemSelector: '.portfolio-item',
@@ -163,3 +161,74 @@
   });
   return false;
 })(jQuery);
+
+
+
+$(function() {
+  $('.lazy').lazy();
+});
+$.ajax({
+  method: "POST",
+  url: "https://api.hashnode.com/",
+  beforeSend: function() {
+      $('#image').show();
+  },
+  contentType: "application/json",
+  headers: {
+      Authorization: "bearer 0865a5ed-578f-45e3-ae21-de8120800101"
+  },
+  complete: function() {
+      $('#image').hide();
+  },
+  data: JSON.stringify({
+      query: `query{
+            user(username:"rahuladream") {
+              publication{
+                posts {
+                  title
+                  brief
+                  slug
+                  coverImage
+                  cuid
+                  totalReactions
+                  dateAdded
+                  popularity
+                }
+              }
+            }
+          }`,
+      variables: {
+          "entry": $('#entry').val()
+      }
+  })
+}).then(function(data) {
+  var mainContainer = document.getElementById("blogData");
+  tmp = data['data']['user']['publication']['posts'];
+  var len = tmp.length / 2;
+  var txt = "";
+  if (len > 0) {
+      for (var i = 0; i < len; i++) {
+          // var div = document.createElement("div");
+          if (i + 1 == len) {
+              col_change = 'col-lg-6'
+          } else {
+              col_change = 'col-lg-3'
+          }
+          var dateString = moment(tmp[i].dateAdded).format("MM-DD-YYYY");
+          var popularity = Math.ceil(tmp[i].popularity);
+          innerHTML = "<div class='col-sm-12 " + col_change + " col-12'> <div class='card' style='background-image: url(" + tmp[i].coverImage + ");' data-aos='fade-up' data-aos-delay='100'>" +
+              "<div class='card-body-second'><h6 class='card-text'>" + dateString + "/ <i class='ri-eye-line'></i> " + popularity + "  </h6><h5 class='card-title'><a href='https://blog.voltry.in/" + tmp[i].slug + "' target='_blank'>" + tmp[i].title + "</a></h5>" +
+              "<div class='read-more'><a href='https://blog.voltry.in/" + tmp[i].slug + "' target='_blank'> Read more</a></div></div></div></div>"
+          $("#blogData").append(innerHTML);
+
+      }
+  }
+
+});
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js').then(function(reg) {}).catch(function(error) {
+      // registration failed
+      console.log('Registration failed with ' + error);
+  });
+}
