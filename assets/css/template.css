@@ -1,56 +1,4 @@
-/*------------------------------------------------------------------
-[Master Stylesheet]
-
-Project:    Geeknius
-Version:    1.0
-Assigned to:    Themesmile 
---------------------------------------------------------------------
-[Table of contents]
-
-1. Body
-2. Header / #header
-3. Navigation Menu / .nav-menu
-4. Hero Section / #hero
-5. Clients Section / #clients
-6. Services Section / #services
-7. What We Do Section / #we-do
-8. Blog News Section / #blog-news
-9. Features Section / #features
-10. Testiomonial Section/ #testiomonial 
-11. Portfolio Section / #portfolio
-12. Experience Section / .experience
-13. Contact Section / .contact
-14. Footer / #footer
--------------------------------------------------------------------*/
-/*------------------------------------------------------------------
-[Typography]
-
-Body copy:      14px "Manrope", sans-serif;
-Headers:        36px "Manrope", sans-serif;
-Input, textarea:    14px "Manrope", sans-serif;
-Sidebar Menu:    24px "Manrope", sans-serif;
-
----------------------------------------------------------------------
-
-[Color codes]
-
-Background: #ffffff (white) & #f7fbfe (light blue)
-Primary: #ed901d (Light green) 
-Secondary: #ed901d (dark blue)
-Content text:   var(--lightColorMedium) #767e90 (light template) &  #fff9;(dark template)
-Header h1:  #394153 (dark grey)
-Header h2:  #394153 (dark grey)
-Button:     #ed901d (dark blue)
-
-a (standard):   #394153 (dark grey)
-a (visited):    #394153 (dark grey)
-a (active):     #394153 (dark grey)
-
-
--------------------------------------------------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Hind:wght@400;700&family=Manrope:wght@200;300;400;600;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;0,800;0,900;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Circular:ital,wght@0,300;0,400;0,700;0,800;0,900;1,400&display=swap");
 html {
   background: var(--lightBg);
   --lightBtn: #F800C1;
@@ -240,7 +188,7 @@ html {
       1.Body
 ========================*/
 body {
-  font-family: "Manrope", sans-serif;
+  font-family: "Circular", sans-serif;
   color: var(--lightColorMedium);
   font-weight: 400;
   background-image: url(../img/bg-hero.svg);
@@ -274,37 +222,37 @@ a:hover {
 }
 
 h1 {
-  font-family: "Manrope", sans-serif;
+  font-family: "Circular", sans-serif;
   letter-spacing: -0.5px;
   font-weight: 800;
 }
 
 h2 {
-  font-family: "Manrope", sans-serif;
+  font-family: "Circular", sans-serif;
   letter-spacing: -0.5px;
   font-weight: 800;
 }
 
 h3 {
-  font-family: "Manrope", sans-serif;
+  font-family: "Circular", sans-serif;
   letter-spacing: -0.5px;
   font-weight: 800;
 }
 
 h4 {
-  font-family: "Manrope", sans-serif;
+  font-family: "Circular", sans-serif;
   letter-spacing: -0.5px;
   font-weight: 800;
 }
 
 h5 {
-  font-family: "Manrope", sans-serif;
+  font-family: "Circular", sans-serif;
   letter-spacing: -0.5px;
   font-weight: 800;
 }
 
 h6 {
-  font-family: "Manrope", sans-serif;
+  font-family: "Circular", sans-serif;
   letter-spacing: -0.5px;
   font-weight: 800;
 }
@@ -528,7 +476,7 @@ h6 {
   padding: 8px 0 12px 25px;
   transition: 0.3s;
   font-size: 16px;
-  font-family: "Manrope", sans-serif;
+  font-family: "Circular", sans-serif;
   font-weight: 900;
   text-transform: inherit;
 }
@@ -586,7 +534,7 @@ h6 {
   padding: 8px 0 12px 25px;
   transition: 0.3s;
   font-size: 16px;
-  font-family: "Manrope", sans-serif;
+  font-family: "Circular", sans-serif;
   font-weight: 600;
 }
 
@@ -722,7 +670,7 @@ h6 {
   padding: 8px 0 12px 25px;
   transition: 0.3s;
   font-size: 16px;
-  font-family: "Manrope", sans-serif;
+  font-family: "Circular", sans-serif;
   font-weight: 600;
 }
 
@@ -1069,7 +1017,7 @@ h6 {
   outline: none;
   text-align: left;
   text-transform: capitalize;
-  font-family: "Manrope", sans-serif;
+  font-family: "Circular", sans-serif;
   font-weight: 700;
   letter-spacing: 0;
   font-size: 1.6rem;
@@ -1342,7 +1290,7 @@ li:hover > a {
 #hero h3 {
   margin-top: 0;
   margin-bottom: 24px;
-  font-family: "Manrope", sans-serif;
+  font-family: "Circular", sans-serif;
   font-size: 12px;
   font-weight: 700;
   font-stretch: normal;
@@ -1402,10 +1350,10 @@ li:hover > a {
   border: 2px solid #ed901d;
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
   background-color: #ed901d;
-  font-family: "Manrope", sans-serif;
+  font-family: "Circular", sans-serif;
   color: #ed901d;
   border: 2px solid #ed901d;
-  font-family: "Manrope", sans-serif;
+  font-family: "Circular", sans-serif;
   background: transparent;
   margin-left: 12px;
 }
@@ -1435,7 +1383,7 @@ li:hover > a {
   border: 2px solid #ed901d;
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
   background-color: #ed901d;
-  font-family: "Manrope", sans-serif;
+  font-family: "Circular", sans-serif;
 }
 
 #hero div .btn-get-started-solid:hover {
@@ -1814,7 +1762,7 @@ section {
   border: 2px solid #ed901d;
   box-shadow: 0 3px 30px 0 rgba(30, 93, 233, 0.56);
   background-color: #ed901d;
-  font-family: "Manrope", sans-serif;
+  font-family: "Circular", sans-serif;
 }
 
 #services .btn-get-started {
@@ -1827,7 +1775,7 @@ section {
   transition: 0.5s;
   border: 2px solid #929bf5;
   color: #929bf5;
-  font-family: "Manrope", sans-serif;
+  font-family: "Circular", sans-serif;
   position: relative;
 }
 
@@ -1915,7 +1863,7 @@ section {
   color: #fff;
   font-size: 32px;
   font-weight: 800;
-  font-family: "Manrope", sans-serif;
+  font-family: "Circular", sans-serif;
   position: absolute;
   top: 36px;
   left: 48px;
@@ -1931,7 +1879,7 @@ section {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 16px;
-  font-family: "Manrope", sans-serif;
+  font-family: "Circular", sans-serif;
 }
 
 .services .title a {
@@ -2963,7 +2911,7 @@ section {
   line-height: 1.4;
   font-weight: 900;
   margin: 6px 0 12px 48px;
-  font-family: "Manrope", sans-serif;
+  font-family: "Circular", sans-serif;
   text-transform: capitalize;
 }
 
@@ -2973,7 +2921,7 @@ section {
   text-transform: uppercase;
   letter-spacing: 1px;
   margin: 0 0 12px 48px;
-  font-family: "Manrope", sans-serif;
+  font-family: "Circular", sans-serif;
 }
 
 .experience .btn-get-started-solid {
@@ -2988,7 +2936,7 @@ section {
   border: 2px solid #ed901d;
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
   background-color: #ed901d;
-  font-family: "Manrope", sans-serif;
+  font-family: "Circular", sans-serif;
 }
 
 .experience .btn-get-started-solid i {
@@ -3126,7 +3074,7 @@ section {
   color: inherit;
   font-size: 24px;
   font-weight: 300;
-  font-family: "Manrope", sans-serif;
+  font-family: "Circular", sans-serif;
   color: var(--lightColor);
 }
 
@@ -3224,7 +3172,7 @@ section {
   border: 2px solid #ed901d;
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
   background-color: #ed901d;
-  font-family: "Manrope", sans-serif;
+  font-family: "Circular", sans-serif;
   margin-top: 12px;
 }
 
@@ -3384,7 +3332,7 @@ footer .info button[type="submit"] {
   border: 2px solid #ed901d;
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
   background-color: #ed901d;
-  font-family: "Manrope", sans-serif;
+  font-family: "Circular", sans-serif;
   margin: 0;
 }
 
@@ -3423,7 +3371,7 @@ footer .info .form-group input {
   border: 2px solid #ed901d;
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
   background-color: #ed901d;
-  font-family: "Manrope", sans-serif;
+  font-family: "Circular", sans-serif;
   padding: 24px 16px;
   border: 2px solid #ed901d;
   margin: 0;
@@ -4220,7 +4168,7 @@ footer .social-links a:hover {
   border: 2px solid #ed901d;
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
   background-color: #ed901d;
-  font-family: "Manrope", sans-serif;
+  font-family: "Circular", sans-serif;
   border: 2px solid #212121;
   box-shadow: 0 0 30px 0 rgba(33, 33, 33, 0.2);
   background-color: #212121;
@@ -4378,7 +4326,7 @@ footer .social-links a:hover {
      Testimonials Version Two
 -------------------------------------------------------------------*/
 .blognews-v-two .section-title h2 small {
-  font-family: "Manrope", sans-serif !important;
+  font-family: "Circular", sans-serif !important;
   margin-top: 36px !important;
 }
 
@@ -4457,7 +4405,7 @@ footer .social-links a:hover {
   border: 2px solid #ed901d;
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
   background-color: #ed901d;
-  font-family: "Manrope", sans-serif;
+  font-family: "Circular", sans-serif;
   border: 2px solid #212121;
   box-shadow: 0 0 30px 0 rgba(33, 33, 33, 0.2);
   background-color: #212121;
@@ -4465,7 +4413,7 @@ footer .social-links a:hover {
 
 body.body-v-three {
   overflow: hidden !important;
-  font-family: "Poppins", sans-serif;
+  font-family: "Circular", sans-serif;
 }
 
 .pp-scrollable {
@@ -4806,7 +4754,7 @@ code {
 }
 
 .header-v-three ul li a {
-  font-family: "Poppins", sans-serif !important;
+  font-family: "Circular", sans-serif !important;
   font-weight: 600 !important;
 }
 
@@ -5244,7 +5192,7 @@ code {
 }
 
 .hero-v-three .name-headline-v-three h2 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Circular", sans-serif;
   font-size: 10vw !important;
   font-weight: 900 !important;
   font-stretch: normal;
@@ -5322,7 +5270,7 @@ code {
 }
 
 .hero-v-three .name-headline-v-three h4 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Circular", sans-serif;
   font-size: 3.5vw;
   font-weight: 900;
   font-stretch: normal;
@@ -5430,7 +5378,7 @@ code {
 }
 
 .we-do-v-three h2 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Circular", sans-serif;
   font-size: 3vw;
   font-weight: 900;
   letter-spacing: -3px;
@@ -5512,7 +5460,7 @@ code {
 }
 
 .we-do-v-three .icon-box-v-three .title {
-  font-family: "Poppins", sans-serif;
+  font-family: "Circular", sans-serif;
   font-size: 18px !important;
   font-weight: 900;
 }
@@ -5578,7 +5526,7 @@ code {
 }
 
 .portfolio-v-three h2 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Circular", sans-serif;
   font-size: 3vw;
   font-weight: 900;
   letter-spacing: -3px;
@@ -5640,7 +5588,7 @@ code {
 }
 
 .experience-v-three h2 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Circular", sans-serif;
   font-size: 3vw;
   font-weight: 900;
   letter-spacing: -3px;
@@ -5706,7 +5654,7 @@ code {
   line-height: 1.6 !important;
   font-weight: 900;
   margin: 6px 0 12px 24px !important;
-  font-family: "Poppins", sans-serif !important;
+  font-family: "Circular", sans-serif !important;
   color: var(--lightColor) !important;
 }
 
@@ -5782,7 +5730,7 @@ code {
 }
 
 .features-v-three h2 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Circular", sans-serif;
   font-size: 3vw;
   font-weight: 900;
   letter-spacing: -3px;
@@ -5856,7 +5804,7 @@ code {
   border: 2px solid #ed901d;
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
   background-color: #ed901d;
-  font-family: "Manrope", sans-serif;
+  font-family: "Circular", sans-serif;
   border: 2px solid #F800C1;
   box-shadow: 0 0 30px 0 rgba(248, 0, 193, 0.2);
   background-color: #F800C1;
@@ -5917,7 +5865,7 @@ code {
   line-height: 1.6 !important;
   font-weight: 900;
   font-size: 3vw !important;
-  font-family: "Poppins", sans-serif !important;
+  font-family: "Circular", sans-serif !important;
   color: var(--lightColor) !important;
   line-height: 1.2;
 }
@@ -6108,7 +6056,7 @@ code {
   font-weight: 900;
   letter-spacing: -3px !important;
   line-height: 1.2;
-  font-family: "Poppins", sans-serif !important;
+  font-family: "Circular", sans-serif !important;
   color: var(--lightColor) !important;
 }
 
@@ -6247,7 +6195,7 @@ code {
 }
 
 .blognews-v-three .section-title h2 small {
-  font-family: "Manrope", sans-serif !important;
+  font-family: "Circular", sans-serif !important;
   margin-top: 36px !important;
 }
 
@@ -6255,7 +6203,7 @@ code {
   line-height: 1.6 !important;
   font-weight: 900;
   font-size: 42px !important;
-  font-family: "Poppins", sans-serif !important;
+  font-family: "Circular", sans-serif !important;
   color: var(--lightColor) !important;
 }
 
@@ -6266,7 +6214,7 @@ code {
 }
 
 .blognews-v-three .card-body-second .card-title a {
-  font-family: "Poppins", sans-serif !important;
+  font-family: "Circular", sans-serif !important;
   color: var(--lightColor);
 }
 
@@ -6286,7 +6234,7 @@ code {
 .contact-v-three h3 {
   line-height: 1.6 !important;
   font-weight: 900;
-  font-family: "Poppins", sans-serif !important;
+  font-family: "Circular", sans-serif !important;
   color: var(--lightColor) !important;
 }
 
@@ -6327,7 +6275,7 @@ code {
   border: 2px solid #ed901d;
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
   background-color: #ed901d;
-  font-family: "Manrope", sans-serif;
+  font-family: "Circular", sans-serif;
   border: 2px solid #F800C1;
   box-shadow: 0 0 30px 0 rgba(248, 0, 193, 0.2);
   background-color: #F800C1;
@@ -6354,7 +6302,7 @@ code {
   font-size: 14px;
   display: inline-block;
   color: white;
-  font-family: Manrope, sans-serif;
+  font-family: Circular, sans-serif;
   background-color: #00BCD4;
   margin: 0;
   padding: 10px 30px;
